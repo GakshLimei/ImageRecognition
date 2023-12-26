@@ -1,5 +1,6 @@
 import cv2
 from ultralytics import YOLO
+import time
 
 # 加载YOLOv8模型
 model = YOLO('../yolo v8/yolov8n.pt')
@@ -19,6 +20,7 @@ frame_step = 2  # 每隔2帧处理一帧
 
 # 初始化计数器
 frame_count = 0
+start_time = time.time()
 
 # 遍历视频帧
 while cap.isOpened():
@@ -33,6 +35,14 @@ while cap.isOpened():
 
             # 在帧上可视化结果
             annotated_frame = results[0].plot()
+
+            # 计算帧率
+            end_time = time.time()
+            fps = 1 / (end_time - start_time)
+            start_time = end_time
+
+            # 在帧上显示帧率
+            cv2.putText(annotated_frame, f"FPS: {int(fps)}", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
 
             # 显示带注释的帧
             cv2.imshow("YOLOv8 inference", annotated_frame)
