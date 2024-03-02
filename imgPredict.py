@@ -2,7 +2,7 @@ from PIL import Image
 from ultralytics import YOLO
 
 # 加载预训练的YOLOv8n模型
-model = YOLO('./yolo v8/yolov8n.pt')
+model = YOLO('yolo v8 models/yolov8n.pt')
 
 # 在'bus.jpg'上运行推理
 results = model('test_images/image2.jpg')  # 结果列表

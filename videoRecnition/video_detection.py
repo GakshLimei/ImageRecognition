@@ -2,7 +2,7 @@ import cv2
 from ultralytics import YOLO
 
 # 加载YOLOv8模型
-model = YOLO('../yolo v8/yolov8m-pose.pt')
+model = YOLO('../yolo v8 models/yolov8n.pt')
 
 # 打开视频文件
 video_path = "D:\\Administrator\\Videos\\Captures\\(27) #AFCCup - Full Match - Group F _ Phnom Penh Crown FC (CAM) vs Dynamic Herb Cebu FC (PHI) - YouTube.mp4"

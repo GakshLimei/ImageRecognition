@@ -3,7 +3,7 @@ from ultralytics import YOLO
 import time
 
 # 加载YOLOv8模型
-model = YOLO('../yolo v8/yolov8n.pt')
+model = YOLO('../yolo v8 models/yolov8n.pt')
 
 # 使用默认摄像头
 video_path = 0
