@@ -18,7 +18,7 @@
 #### 使用说明
 
 1.  安装依赖： 在项目根目录下运行以下命令安装所需依赖：
-`pip install -r requirements.txt`
+`pip install -r requirement.txt`
 2. 下载预训练模型： 在 [官方模型库](https://docs.ultralytics.com/models/yolov8/#supported-tasks-and-modes) 下载适用于 YOLOv8 的预训练模型，并将其保存到 models/ 目录下。
 2.  运行预测： 使用以下命令运行图像识别：
 `python predict.py --image_path /path/to/image.jpg`修改 --image_path 参数为待识别图像的路径。

@@ -18,7 +18,7 @@ Welcome to the YOLOv8 repository! Based on the YOLOv8 algorithm, this warehouse 
 #### Instructions for Use
 
 1. Install Dependencies: Install the required dependencies by running the following command from the project root:
-`pip install -r requirements.txt`
+`pip install -r requirement.txt`
 2. Download the pre-trained model: [Official model library](https://docs.ultralytics.com/models/yolov8/#supported-tasks-and-modes) download for YOLOv8 training model, And save it to the models/ directory.
 2. Run Prediction:
 `python predict.py --image_path /path/to/image.jpg` Change the --image_path argument to the path of the image to be recognized.
